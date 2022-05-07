@@ -1,11 +1,12 @@
 import React from 'react';
 import uuid from 'react-uuid';
 import {useState} from "react";
+import { library } from '@fortawesome/fontawesome-svg-core';
 import {FontAwesomeIcon} from "@fortawesome/react-fontawesome";
 import {faFolder,faFile} from "@fortawesome/free-solid-svg-icons";
 import "./Folder.css";
 
-function Folder({explorer}) {
+function Folderz({explorer}) {
     
     const [expand, setExpand] = useState(false);
 
@@ -18,7 +19,7 @@ function Folder({explorer}) {
 
 <div style={{display:expand?"block":"none",paddingLeft:"20px"}}>
     {explorer.items.map((exp)=>{
-        return <Folder key={uuid()} explorer={exp}/>
+        return <Folderz key={uuid()} explorer={exp}/>
     })}
 </div>
     </div>
@@ -36,4 +37,4 @@ else{
 }
 }
 
-export default Folder
+export default Folderz;
