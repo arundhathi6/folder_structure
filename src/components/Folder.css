@@ -1,0 +1,16 @@
+.foldergreen{
+    color:yellowgreen;
+    cursor: pointer;
+   
+}
+
+.fileblue{
+    color:deepskyblue
+}
+
+.onHover:hover{
+    width:300px;
+    background-color:dimgray;
+    padding:5px;
+    
+}
